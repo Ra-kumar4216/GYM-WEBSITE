@@ -1,326 +1,579 @@
 /* --- Professional Gym Theme CSS --- */
 :root {
-    --primary-color: #ff3e3e; /* Red theme as per logo */
-    --bg-dark: #0a0a0a;
-    --card-bg: #161616;
-    --text-white: #ffffff;
-    --text-gray: #b0b0b0;
+  --primary-color: #ff3e3e; /* Red theme as per logo */
+  --bg-dark: #0a0a0a;
+  --card-bg: #161616;
+  --text-white: #ffffff;
+  --text-gray: #b0b0b0;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-    background-color: var(--bg-dark);
-    color: var(--text-white);
-    line-height: 1.6;
+  background-color: var(--bg-dark);
+  color: var(--text-white);
+  line-height: 1.6;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* --- Header & Navigation --- */
 header {
-    background: rgba(0, 0, 0, 0.9);
-    padding: 20px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    border-bottom: 1px solid #222;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #222;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--primary-color);
 }
 
 .nav-links {
-    display: flex;
-    list-style: none;
-    gap: 30px;
+  display: flex;
+  list-style: none;
+  gap: 30px;
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: var(--text-white);
-    font-weight: 500;
-    transition: 0.3s;
+  text-decoration: none;
+  color: var(--text-white);
+  font-weight: 500;
+  transition: 0.3s;
 }
 
 .nav-links a:hover {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 /* --- Hero Section (Background Image) --- */
 .hero {
-    height: 100vh;
-    /* Yahan aapki bicep curl wali image (Image_4) set hai */
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), 
-                url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1920&auto=format&fit=crop');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  height: 100vh;
+  /* Yahan aapki bicep curl wali image (Image_4) set hai */
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1920&auto=format&fit=crop");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .hero-content h1 {
-    font-size: 4rem;
-    margin-bottom: 20px;
-    text-transform: uppercase;
+  font-size: 4rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .btn-primary {
-    background: var(--primary-color);
-    color: white;
-    padding: 15px 35px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 700;
-    display: inline-block;
+  background: var(--primary-color);
+  color: white;
+  padding: 15px 35px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 700;
+  display: inline-block;
 }
 
 /* --- Facilities Section (Image Cards) --- */
 .facilities {
-    padding: 100px 0;
+  padding: 100px 0;
 }
 
 .section-title {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 50px;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
 }
 
 .facilities-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
 }
 
 .facility-card {
-    background: var(--card-bg);
-    border-radius: 10px;
-    overflow: hidden;
-    transition: 0.3s;
+  background: var(--card-bg);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s;
 }
 
 .facility-card:hover {
-    transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 /* Fixed image size taaki saari photos ek jaisi dikhein */
 .facility-img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover; 
-    border-bottom: 3px solid var(--primary-color);
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 3px solid var(--primary-color);
 }
 
 .card-text {
-    padding: 20px;
+  padding: 20px;
 }
 
 .card-text h3 {
-    margin-bottom: 10px;
-    color: var(--primary-color);
+  margin-bottom: 10px;
+  color: var(--primary-color);
 }
 
 /* --- Membership Plans --- */
 .plans {
-    padding: 100px 0;
-    background-color: #050505;
+  padding: 100px 0;
+  background-color: #050505;
 }
 
 .plans-grid {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .plan-card {
-    background: var(--card-bg);
-    padding: 40px;
-    border-radius: 15px;
-    width: 320px;
-    text-align: center;
-    border: 1px solid #222;
+  background: var(--card-bg);
+  padding: 40px;
+  border-radius: 15px;
+  width: 320px;
+  text-align: center;
+  border: 1px solid #222;
 }
 
 .plan-card.featured {
-    border: 2px solid var(--primary-color);
-    transform: scale(1.05);
+  border: 2px solid var(--primary-color);
+  transform: scale(1.05);
 }
 
 .price {
-    font-size: 3rem;
-    font-weight: 800;
-    margin: 20px 0;
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 20px 0;
 }
 
 .price span {
-    font-size: 1rem;
-    color: var(--text-gray);
+  font-size: 1rem;
+  color: var(--text-gray);
 }
 
 .plan-card ul {
-    list-style: none;
-    margin-bottom: 30px;
-    text-align: left;
+  list-style: none;
+  margin-bottom: 30px;
+  text-align: left;
 }
 
 .plan-card ul li {
-    padding: 10px 0;
-    border-bottom: 1px solid #222;
+  padding: 10px 0;
+  border-bottom: 1px solid #222;
 }
 
 /* --- Footer --- */
 footer {
-    padding: 50px 0;
-    text-align: center;
-    border-top: 1px solid #222;
+  padding: 50px 0;
+  text-align: center;
+  border-top: 1px solid #222;
 }
 
 /* --- Mobile Responsive --- */
 @media (max-width: 768px) {
-    .hero-content h1 { font-size: 2.5rem; }
-    .nav-links { display: none; } /* Mobile menu toggle can be added via JS */
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .nav-links {
+    display: none;
+  } /* Mobile menu toggle can be added via JS */
 }
 /* Contact Section Styling */
 .contact-section {
-    background-color: #0a0a0a;
-    padding: 80px 0;
-    border-top: 1px solid #222;
+  background-color: #0a0a0a;
+  padding: 80px 0;
+  border-top: 1px solid #222;
 }
 
 .contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
 }
 
 /* Form Styles */
 .contact-form h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #fff;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
 }
 
-.contact-form input, 
+.contact-form input,
 .contact-form textarea {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 15px;
-    background: #111;
-    border: 1px solid #333;
-    color: #fff;
-    border-radius: 5px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  background: #111;
+  border: 1px solid #333;
+  color: #fff;
+  border-radius: 5px;
 }
 
 .btn-send {
-    background-color: #ff3e3e;
-    color: white;
-    padding: 12px 30px;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
+  background-color: #ff3e3e;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .btn-send:hover {
-    background-color: #cc3131;
+  background-color: #cc3131;
 }
 
 /* Login Box Right Side */
 .login-box {
-    text-align: center;
-    border-left: 1px solid #333;
-    padding-left: 50px;
+  text-align: center;
+  border-left: 1px solid #333;
+  padding-left: 50px;
 }
 
 .login-box h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
 .login-box p {
-    color: #aaa;
-    margin-bottom: 20px;
+  color: #aaa;
+  margin-bottom: 20px;
 }
 
 .btn-login-outline {
-    background: transparent;
-    border: 2px solid #ff3e3e;
-    color: #ff3e3e;
-    padding: 10px 40px;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: 0.3s;
+  background: transparent;
+  border: 2px solid #ff3e3e;
+  color: #ff3e3e;
+  padding: 10px 40px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
 }
 
 .btn-login-outline:hover {
-    background: #ff3e3e;
-    color: #fff;
+  background: #ff3e3e;
+  color: #fff;
 }
 
 /* Modal Popup Styles */
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0; top: 0;
-    width: 100%; height: 100%;
-    background: rgba(0,0,0,0.9);
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
 }
 
 .modal-content {
-    background: #1a1a1a;
-    margin: 10% auto;
-    padding: 40px;
-    width: 350px;
-    border-radius: 10px;
-    position: relative;
+  background: #1a1a1a;
+  margin: 10% auto;
+  padding: 40px;
+  width: 350px;
+  border-radius: 10px;
+  position: relative;
 }
 
 .modal-input {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    background: #222;
-    border: 1px solid #444;
-    color: #fff;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  background: #222;
+  border: 1px solid #444;
+  color: #fff;
 }
 
 .close {
-    position: absolute;
-    right: 20px;
-    top: 10px;
-    font-size: 30px;
-    cursor: pointer;
-    color: #666;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #666;
 }
 
-/* Responsive for Mobile */
+/* Stats wala band - hero ke just niche numbers dikhane ke liye */
+.stats-bar {
+  background: #050505;
+  padding: 40px 0;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--primary-color);
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--text-gray);
+  margin-top: 4px;
+}
+
+/* Trainers section - facility cards jaisa hi style use kiya hai consistency ke liye */
+.trainers {
+  padding: 100px 0;
+}
+
+.trainers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.trainer-card {
+  background: var(--card-bg);
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 24px;
+  transition: 0.3s;
+}
+
+.trainer-card:hover {
+  transform: translateY(-8px);
+}
+
+.trainer-img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.trainer-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+}
+
+.trainer-role {
+  color: var(--primary-color);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.trainer-bio {
+  color: var(--text-gray);
+  font-size: 0.85rem;
+  padding: 0 20px;
+}
+
+/* Testimonial cards - log kya bolte hai uske liye */
+.testimonials {
+  padding: 100px 0;
+  background-color: #050505;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.testimonial-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 28px;
+  border: 1px solid #222;
+}
+
+.testimonial-text {
+  font-size: 0.95rem;
+  color: #ddd;
+  margin-bottom: 20px;
+  line-height: 1.7;
+  font-style: italic;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.testimonial-author img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-author h4 {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.testimonial-author span {
+  font-size: 0.75rem;
+  color: var(--text-gray);
+}
+
+/* Timing aur address wala box, side by side rakha hai */
+.info-section {
+  padding: 80px 0;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.hours-box,
+.location-box {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 32px;
+  border: 1px solid #222;
+}
+
+.hours-box h2,
+.location-box h2 {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  color: var(--primary-color);
+}
+
+.hours-list {
+  list-style: none;
+}
+
+.hours-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #222;
+  font-size: 0.9rem;
+}
+
+.hours-list li:last-child {
+  border-bottom: none;
+}
+
+.address {
+  color: var(--text-gray);
+  margin-bottom: 16px;
+  line-height: 1.7;
+}
+
+.phone {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* FAQ accordion - JS me logic hai ek time pe ek hi khulega */
+.faq-section {
+  padding: 80px 0;
+  background-color: #050505;
+}
+
+.faq-list {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid #222;
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: left;
+  padding: 20px 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-icon {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  font-weight: 400;
+  transition: transform 0.3s;
+}
+
+.faq-item.open .faq-icon {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq-answer p {
+  color: var(--text-gray);
+  font-size: 0.9rem;
+  padding-bottom: 20px;
+  line-height: 1.6;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 200px;
+}
+
+/* --- Responsive for new sections --- */
 @media (max-width: 768px) {
-    .contact-grid { grid-template-columns: 1fr; }
-    .login-box { border-left: none; border-top: 1px solid #333; padding: 40px 0 0 0; }
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
 }
